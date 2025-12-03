@@ -4,6 +4,10 @@
     section {
         max-width : 1000px;
     }
+
+    .col_left, .col_right {
+        width: 500px;
+    }
 }
 
 /* HEADER + NAVBAR(DROPDOWN) */
