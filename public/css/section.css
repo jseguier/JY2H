@@ -66,6 +66,7 @@ section {
 
 /* Texte PM */
 .pm-label {
+    margin-left: 10px;
     font-size: 1rem;
     font-weight: 500;
 }
