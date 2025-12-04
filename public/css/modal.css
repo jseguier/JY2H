@@ -1,0 +1,98 @@
+/* MODAL (fenêtre) */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  z-index: 1000;
+
+  background: #111827;
+  color: #f9fafb;
+  border-radius: 16px;
+  padding: 24px 28px;
+  max-width: 400px;
+  width: 90%;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+
+  transition: transform 0.2s ease-out;
+}
+
+/* Quand le modal est actif */
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+/* Contenu du modal */
+.modal-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.modal-content h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Croix de fermeture */
+.modal-content i.fa-xmark {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  cursor: pointer;
+}
+
+/* Formulaire */
+.modal-content form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.modal-content label {
+  font-size: 0.85rem;
+}
+
+.modal-content input[type="text"],
+.modal-content input[type="password"] {
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid #4b5563;
+  background: #020617;
+  color: #e5e7eb;
+}
+
+.modal-content input[type="text"]:focus,
+.modal-content input[type="password"]:focus {
+  outline: none;
+  border-color: #38bdf8;
+}
+
+.modal-content input[type="submit"] {
+  margin-top: 10px;
+  padding: 8px 10px;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+  color: #0b1120;
+  font-weight: 600;
+}
+
+/* OVERLAY + BLUR DU FOND */
+#overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35); /* assombrit */
+  backdrop-filter: blur(6px);      /* blur du fond */
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease-out;
+  z-index: 900;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}

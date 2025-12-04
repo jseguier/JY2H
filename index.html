@@ -22,6 +22,10 @@
     <link rel="stylesheet" href="public/css/map.css">
     <script src="https://js.arcgis.com/4.34/"></script>
     <script defer src="public\js\map.js"></script>
+
+    <!-- MODAL -->
+     <link rel="stylesheet" href="public/css/modal.css">
+     <script src="public/js/modal.js"></script>
     
 
 </head>
@@ -37,7 +41,7 @@
                 <li><a href="projet.html">Projet</a></li>
                 <li><a href="informations.html">Informations</a></li>
             </ul>
-            <a href="#" class="action_btn">Se connecter</a>
+            <a data-modal-target="#modal" class="action_btn">Se connecter</a>
             <div class="toggle_btn">
                 <i class="fa-solid fa-bars"></i>
             </div>
@@ -46,9 +50,30 @@
             <li><a href="index.html">Accueil</a></li>
             <li><a href="projet.html">Projet</a></li>
             <li><a href="informations.html">Informations</a></li>
-            <li><a href="#" class="action_btn">Se connecter</a></li>
+            <li><a data-modal-target="#modal" class="action_btn">Se connecter</a></li>
         </div>
       </header>
+
+      <!-- MODAL -->
+         <div id="modal" class="modal">
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                <i class="fa-solid fa-xmark" data-close-button></i>
+                <h2>Espace Membre</h2>
+                <form>
+                    <label for="username">Nom d'utilisateur :</label>
+                    <input type="text" id="username" name="username" required>
+
+                    <label for="password">Mot de passe :</label>
+                    <input type="password" id="password" name="password" required>
+
+                    <input type="submit" value="Se connecter">
+                </form>
+                </div>
+            </div>
+        </div>
+
+        <div id="overlay"></div>
 
       <!-- SECTION -->
        <section>
@@ -89,11 +114,12 @@
 
         </div>
 
+        <!-- AREA CHARTS -->
         <div class="section_title">
             <p>Curieux de <strong>découvrir</strong> les <strong>performances</strong> de notre solution ?<br> <strong>JY2H</strong> met à votre disposition un <strong>outil simple</strong> de visualisation des données en <strong>temps réel</strong>.</p>
         </div>
 
-        
+    
        </section>
 
       <!-- FOOTER -->

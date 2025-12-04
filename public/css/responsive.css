@@ -36,19 +36,29 @@
 
 /* SECTION MAP */
 @media (max-width: 768px) {
-    #map {
-        width: 100vw !important;
-        height: 75vh; /* ajuste comme tu veux */
-    }
-
-    .map-container {
-        width: 100vw !important;
-        margin: 0;
-        padding: 0;
-    }
 
     .section_columns {
         flex-direction: column;
-        gap: 50px;
+        align-items: center;
+        gap: 30px;
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .col_left, .col_right {
+        margin: 0;
+        width: 100% !important;
+        max-width: 100%;
+    }
+
+    .col_left {
+        width: 100% !important;
+        height: 50px !important; 
+        display: flex;
+        justify-content: center;
+    }
+
+    .pm-box {
+        width: 100%;
     }
 }
