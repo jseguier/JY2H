@@ -18,6 +18,9 @@
     <link rel="stylesheet" href="public/css/responsive.css">
     <link rel="stylesheet" href="public/css/ml.css">
 
+    <!-- MODAL -->
+    <link rel="stylesheet" href="public/css/modal.css">   
+
     
 
 </head>
@@ -33,7 +36,7 @@
                 <li><a href="projet.html">Projet</a></li>
                 <li><a href="informations.html">Informations</a></li>
             </ul>
-            <a href="#" class="action_btn">Se connecter</a>
+            <a data-modal-target="#modal" class="action_btn">Se connecter</a>
             <div class="toggle_btn">
                 <i class="fa-solid fa-bars"></i>
             </div>
@@ -42,9 +45,31 @@
             <li><a href="index.html">Accueil</a></li>
             <li><a href="projet.html">Projet</a></li>
             <li><a href="informations.html">Informations</a></li>
-            <li><a href="#" class="action_btn">Se connecter</a></li>
+            <li><a data-modal-target="#modal" class="action_btn">Se connecter</a></li>
         </div>
       </header>
+
+      <!-- MODAL -->
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <i class="fa-solid fa-xmark" data-close-button></i>
+                <div class="modal-header">
+                    <h2>Espace Membre</h2>
+                    <img src="public/img/logo-jy2h.png" alt="Logo JY2H" class="modal-logo">
+                </div>
+                <form>
+                    <label for="username">Nom d'utilisateur :</label>
+                    <input type="text" id="username" name="username" required>
+
+                    <label for="password">Mot de passe :</label>
+                    <input type="password" id="password" name="password" required>
+
+                    <input type="submit" value="Se connecter">
+                </form>
+            </div>
+        </div>
+
+        <div id="overlay"></div>
 
       <!-- SECTION -->
        <section>
@@ -114,6 +139,9 @@
             toggleBTN_ICON.classList = isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars';
         }
       </script>
+
+      <!-- SCRIPT MODAL -->
+      <script src="public\js\modal.js" defer></script>
 
 </body>
 

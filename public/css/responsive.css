@@ -46,19 +46,17 @@
     }
 
     .col_left, .col_right {
-        margin: 0;
         width: 100% !important;
         max-width: 100%;
     }
 
     .col_left {
-        width: 100% !important;
         height: 50px !important; 
         display: flex;
         justify-content: center;
     }
 
     .pm-box {
-        width: 100%;
+        display: flex;
     }
 }

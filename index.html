@@ -24,9 +24,7 @@
     <script defer src="public\js\map.js"></script>
 
     <!-- MODAL -->
-     <link rel="stylesheet" href="public/css/modal.css">
-     <script src="public/js/modal.js"></script>
-    
+    <link rel="stylesheet" href="public/css/modal.css">    
 
 </head>
 
@@ -55,11 +53,13 @@
       </header>
 
       <!-- MODAL -->
-         <div id="modal" class="modal">
-            <div id="modal" class="modal">
-                <div class="modal-content">
+        <div id="modal" class="modal">
+            <div class="modal-content">
                 <i class="fa-solid fa-xmark" data-close-button></i>
-                <h2>Espace Membre</h2>
+                <div class="modal-header">
+                    <h2>Espace Membre</h2>
+                    <img src="public/img/logo-jy2h.png" alt="Logo JY2H" class="modal-logo">
+                </div>
                 <form>
                     <label for="username">Nom d'utilisateur :</label>
                     <input type="text" id="username" name="username" required>
@@ -69,7 +69,6 @@
 
                     <input type="submit" value="Se connecter">
                 </form>
-                </div>
             </div>
         </div>
 
@@ -147,6 +146,9 @@
             toggleBTN_ICON.classList = isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars';
         }
       </script>
+
+      <!-- SCRIPT MODAL -->
+      <script src="public\js\modal.js" defer></script>
 
 </body>
 
