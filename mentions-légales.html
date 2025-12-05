@@ -55,7 +55,7 @@
                 <i class="fa-solid fa-xmark" data-close-button></i>
                 <div class="modal-header">
                     <h2>Espace Membre</h2>
-                    <img src="public/img/logo-jy2h.png" alt="Logo JY2H" class="modal-logo">
+                    <img src="public/img/logo-jy2h.png" class="modal-logo">
                 </div>
                 <form>
                     <label for="username">Nom d'utilisateur :</label>
@@ -63,6 +63,9 @@
 
                     <label for="password">Mot de passe :</label>
                     <input type="password" id="password" name="password" required>
+
+                    <p class="login-error" id="login-error"></p>
+                    <p class="login-success" id="login-success"></p>
 
                     <input type="submit" value="Se connecter">
                 </form>
