@@ -14,8 +14,19 @@ function openModal(modal) {
 
 function closeModal(modal) {
   if (!modal) return;
+
   modal.classList.remove("active");
   if (overlay) overlay.classList.remove("active");
+
+  const usernameInput = modal.querySelector("#username");
+  const passwordInput = modal.querySelector("#password");
+
+  if (usernameInput) usernameInput.blur();
+  if (passwordInput) passwordInput.blur();
+
+  if (document.activeElement) {
+    document.activeElement.blur();
+  }
 }
 
 openModalButtons.forEach((button) => {
