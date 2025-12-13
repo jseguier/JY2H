@@ -1,28 +1,50 @@
 require(
-  ["esri/Map", "esri/Basemap", "esri/views/SceneView" ],
-  function (Map, Basemap, SceneView) {
+  ["esri/Map", "esri/Basemap", "esri/views/SceneView", "esri/Graphic", "esri/geometry/Point"],
+  function (Map, Basemap, SceneView, Graphic, Point) {
+
     const basemap3D = new Basemap({
-      portalItem: {
-        id: "0560e29930dc4d5ebeb58c635c0909c9"
-      }
+      portalItem: { id: "0560e29930dc4d5ebeb58c635c0909c9" }
     });
 
-    const map = new Map({
-      basemap: basemap3D
-    });
+    const map = new Map({ basemap: basemap3D });
 
     const view = new SceneView({
-      container: "viewDiv", 
-      map: map,
+      container: "viewDiv",
+      map,
       camera: {
-        position: {
-          longitude: 5.394594042544371,   
-          latitude: 43.30040303197376,   
-          z: 261.47949998732656            // altitude
-        },
-        heading: 10.766081115754021,          // orientation
-        tilt: 62.81206614938708             // tilt
+        position: { 
+          longitude: 5.394594042544371, 
+          latitude: 43.30040303197376, 
+          z: 261.48 },
+        heading: 10.76,
+        tilt: 62.81
       }
     });
 
-});
+    //PING
+
+    view.when(() => {
+      const point = new Point({
+        longitude: 5.394755,
+        latitude: 43.305257,
+        z: 5
+      });
+
+      const symbol = {
+        type: "picture-marker",
+        url: "./public/img/logo-jy2h.png",
+        width: "30px",
+        height: "30px"
+      };
+
+      const graphic = new Graphic({
+        geometry: point,
+        symbol,
+        elevationInfo: { mode: "relative-to-ground", offset: 5 }
+      });
+
+      view.graphics.add(graphic);
+    });
+
+  }
+);
