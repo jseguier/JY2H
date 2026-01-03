@@ -1,0 +1,96 @@
+
+.ct-container {
+    max-width: 900px;
+    margin: auto;
+    
+}
+
+.ct-container h3 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.ct-title p {
+    margin-bottom: 60px;
+    
+}
+
+
+/*-- CONTACT FORM --*/
+
+.form-container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    margin-top: 40px;
+}
+
+.ct-container form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 900px;
+}
+
+.ct-container .input-container{
+    max-width: 600px;
+}
+
+.ct-container form input {
+     width: 45%;
+}
+
+.ct-container form input:hover,
+.ct-container form textarea:hover {
+    border-bottom: 2px solid #909090;
+}
+
+.ct-container form input,
+.ct-container form textarea {
+    margin: 15px 0;
+    font-size: 0.8rem;
+    padding: 10px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #dedede;
+    transition: 0.2s;
+}
+
+.ct-container form textarea {
+    width: 100%;
+    resize: none;
+    height: 142px;
+    margin-bottom: 30px;
+}
+
+.ct-container form button {
+    background-color: #000; 
+    color:#ffffff;
+    padding : 0.6rem 1.2rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.4 ease;
+    margin: 0 auto;
+}
+
+.ct-container form button:hover {
+    scale: 1.05;
+    color:#cecece;
+}
+
+.ct-container form button:active {
+    scale: 0.95;
+}
