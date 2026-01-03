@@ -1,0 +1,44 @@
+
+.cr-container {
+    max-width: 800px;
+    margin: auto;
+    
+}
+
+.cr-container h3 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.cr-container br {
+    margin: 500px;
+}
+
+.logo-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: -40px;
+    margin-bottom: -40px;
+}
+
+.logo-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.logo-cr {
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 200px; 
+    height: auto; 
+
+}

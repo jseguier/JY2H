@@ -28,7 +28,7 @@ section {
 }
 
 .col_left {
-     flex: 0 0 auto;
+    flex: 0 0 auto;
     max-width: 800px;
     width: 100%;
 }
