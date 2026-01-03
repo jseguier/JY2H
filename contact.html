@@ -84,13 +84,19 @@
 
                 <div class="form-container">
                     <div class="input-container">
-                        <form action="#" method="post">
-                            <input type="text" name="firstname" placeholder="Entrer votre Prénom..." required="">
-                            <input type="text" name="lastname" placeholder="Entrer votre Nom..." required="">
-                            <input type="email" name="email" placeholder="Entrer votre email..." required="">
-                            <input type="text" name="subject" placeholder="Entrez le sujet..." required="">
-                            <textarea name="message" placeholder="Entrer votre message..." required=""></textarea>
+
+                        <form action="https://api.web3forms.com/submit" method="POST">
+
+                            <input type="hidden" name="access_key" value="8d23f8dc-00b1-4e42-8c60-73a912cbd618">
+
+                            <input type="text" name="firstname" placeholder="Entrer votre Prénom..." required>
+                            <input type="text" name="lastname" placeholder="Entrer votre Nom..." required>
+                            <input type="email" name="email" placeholder="Entrer votre email..." required>
+                            <input type="text" name="subject" placeholder="Entrez le sujet..." required>
+                            <textarea name="message" placeholder="Entrer votre message..." required></textarea>
+
                             <button type="submit">Envoyer</button>
+
                         </form>
                     </div>
                 </div>
