@@ -2,6 +2,7 @@
 .ct-container {
     max-width: 900px;
     margin: auto;
+    margin-bottom: -20px;
     
 }
 
@@ -13,7 +14,7 @@
 }
 
 .ct-title p {
-    margin-bottom: 60px;
+    margin-bottom: 45px;
     
 }
 
@@ -68,7 +69,7 @@
 .ct-container form textarea {
     width: 100%;
     resize: none;
-    height: 142px;
+    height: 80px;
     margin-bottom: 30px;
 }
 
@@ -84,6 +85,7 @@
     cursor: pointer;
     transition: scale 0.4 ease;
     margin: 0 auto;
+    margin-bottom: 20px;
 }
 
 .ct-container form button:hover {
