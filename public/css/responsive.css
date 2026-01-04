@@ -73,3 +73,25 @@
     }
     
   }
+
+/* CREDIT TEL */
+@media (max-width: 768px){
+    .logo-top{
+      display: grid;
+      grid-template-columns: repeat(2, minmax(120px, 1fr));
+      justify-items: center;
+      gap: 24px;
+    }
+  
+    .logo-bottom{
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-items: center;
+      gap: 24px;
+    }
+  
+    .logo-cr{
+      width: 160px;
+      margin: 0;
+    }
+  }
