@@ -38,34 +38,38 @@
 @media (max-width: 768px) {
 
     .section_columns {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 20px;
-        width: 100%;
-        padding: 20px 0;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      width: 100%;
+      padding: 20px 0;
     }
-
-    .col_left, .col_right {
-        display: flex;
-        justify-content: center;
-    }
-
+  
     .col_left {
-        height: 50px !important; 
-        display: flex;
-        justify-content: center;
+        display: none;
     }
-
-    .pm-panel{
-        width: 100%;
-        align-items: center;
-        gap: 14px;
-     }
-
+  
+    .col_right {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+  
+    .pm-panel {
+      width: 100%;
+      align-items: center;
+      gap: 14px;
+    }
+  
     .pm-box {
-        width: 100%;
-        max-width: 420px;
-        min-width: 0;
+      width: 100%;
+      max-width: 320px;
+      min-width: 0;
     }
-}
+  
+    section {
+      text-align: center;
+    }
+    
+  }
