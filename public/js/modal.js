@@ -138,8 +138,11 @@ if (loginForm) {
 
       setTimeout(() => {
         closeModal(modal);
-        window.location.href = "dashboard.html"; // lien page redirection
-      }, 700);
+        window.open(
+          "https://jy2h.grafana.net/public-dashboards/0f87beff650a4ad2ab6296791149db8b",
+          "_blank"
+        );
+              }, 700);
 
     } catch (err) {
       console.error("Erreur réseau ou serveur :", err);
