@@ -13,11 +13,11 @@ require(
       map,
       camera: {
         position: { 
-          longitude: 5.394594042544371, 
-          latitude: 43.30040303197376, 
-          z: 261.48 },
-        heading: 10.76,
-        tilt: 62.81
+          longitude: 5.409274278268077, 
+          latitude: 43.3386282530669, 
+          z: 371.5248402878642 },
+        heading: 31.440119753726293,
+        tilt: 49.31217010594132
       }
     });
 
@@ -25,8 +25,8 @@ require(
 
     view.when(() => {
       const point = new Point({
-        longitude: 5.394755,
-        latitude: 43.305257,
+        longitude: 5.412801,
+        latitude: 43.342126,
         z: 5
       });
 
